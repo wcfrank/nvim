@@ -1,0 +1,87 @@
+# ===============================
+# OS / Editor noise
+# ===============================
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.bak
+*.tmp
+*.orig
+*.log
+*.rej
+*.lock
+
+# ===============================
+# Neovim runtime data (DO NOT COMMIT)
+# ===============================
+# lazy.nvim / packer / plugins
+lazy/
+pack/
+site/pack/
+
+# Plugin build artifacts
+**/node_modules/
+**/.cache/
+**/.npm/
+**/.yarn/
+
+# Treesitter compiled files
+parser/
+**/parser/
+
+# LSP / Mason
+mason/
+lsp/
+lsp_servers/
+
+# Session / undo / backup
+sessions/
+shada/
+undo/
+backup/
+swap/
+
+# Neovim state
+state/
+view/
+
+# ===============================
+# Language servers / tooling
+# ===============================
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# Node / frontend tooling
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# ===============================
+# User-specific or machine-specific
+# ===============================
+# Local overrides (keep configs portable)
+local.lua
+local.vim
+custom.lua
+custom.vim
+
+# Environment secrets
+.env
+.env.*
+
+# ===============================
+# Optional: exclude compiled binaries
+# ===============================
+*.so
+*.dll
+*.dylib
+
+# ===============================
+# Chao
+# ===============================
+lazy-lock.json
