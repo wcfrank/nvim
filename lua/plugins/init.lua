@@ -55,7 +55,7 @@ return {
 
 	{
 		"nvim-treesitter/nvim-treesitter",
-		-- branch = "main",
+		branch = "master", -- old version is master, new version is main
 		build = ":TSUpdate",
 		lazy = false,
 		dependencies = {
