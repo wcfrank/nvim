@@ -107,7 +107,7 @@ return {
 				function()
 					Snacks.picker.command_history()
 				end,
-				desc = "Snacks [F]ind :[Command] History",
+				desc = "Snacks [F]ind [:]Command History",
 			},
 			{
 				"<leader>fn",
@@ -251,14 +251,14 @@ return {
 				function()
 					Snacks.picker.lsp_incoming_calls()
 				end,
-				desc = "Snacks [C]alls [I]ncoming",
+				desc = "Snacks C[a]lls [I]ncoming",
 			},
 			{
 				"gao",
 				function()
 					Snacks.picker.lsp_outgoing_calls()
 				end,
-				desc = "Snacks [C]alls Outgoing",
+				desc = "Snacks C[a]lls [O]utgoing",
 			},
 			{
 				"<leader>ss",

@@ -2,7 +2,7 @@ return {
 	{
 		"nvim-mini/mini.pairs",
 		opts = {
-			modes = { insert = true, commnad = true, terminal = false },
+			modes = { insert = true, command = true, terminal = false },
 			mappings = {
 				["`"] = false,
 			},
