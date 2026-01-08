@@ -3,7 +3,7 @@ return {
 		"iamcco/markdown-preview.nvim",
 		cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
 		ft = { "markdown" },
-		build = "cd app && npm install", -- NOTE: node version should be v20, latest version not working
+		build = "cd app && npm install && git restore yarn.lock", -- NOTE: node version should be v20, latest version not working
 		init = function()
 			vim.cmd([[
                 function! MkdpOpen(url) abort
