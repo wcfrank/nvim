@@ -2,7 +2,7 @@
 vim.lsp.config["basedpyright"] = {
 	cmd = { "basedpyright-langserver", "--stdio" },
 	filetypes = { "python" },
-	-- root_markers = { "pyproject.toml", "setup.py", ".git" },
+	root_markers = { "pyproject.toml", "setup.py", ".git" },
 	settings = {
 		basedpyright = {
 			disableOrganizeImports = true, -- 让 Ruff 来处理导入
@@ -21,9 +21,9 @@ vim.lsp.enable("basedpyright")
 vim.lsp.config["lua_ls"] = {
 	cmd = { "lua-language-server" },
 	filetypes = { "lua" },
-	-- root_markers = {
-	--     ".luarc.json", ".luarc.jsonc", ".luacheckrc", ".stylua.toml", "stylua.toml", ".git"
-	-- },
+	root_markers = {
+	    ".luarc.json", ".luarc.jsonc", ".luacheckrc", ".stylua.toml", "stylua.toml", ".git"
+	},
 	settings = {
 		Lua = {
 			runtime = { version = "LuaJIT" },
